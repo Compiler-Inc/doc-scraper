@@ -4,15 +4,28 @@ A flexible documentation crawler that can scrape and process documentation from 
 
 ## Installation
 
+First install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
+Then install the package in editable mode:
+```bash
+pip install -e .
+```
+
+The `-e` flag installs the package in "editable" mode, which means:
+- The package is installed in your Python environment
+- Python looks for the package in your current directory instead of copying files
+- Changes to the source code take effect immediately without reinstalling
+- Required for running the package as a module with `python -m`
+
 ## Usage
 
-Run the scraper with a URL:
+Run the scraper with a URL from the `src` directory:
 
 ```bash
+cd src
 python -m doc_scraper.main https://docs.example.com
 ```
 
@@ -26,6 +39,12 @@ Example with all options:
 ```bash
 python -m doc_scraper.main https://docs.example.com -o my_docs -m 500 -c 2
 ```
+
+### Troubleshooting
+
+If you get a "ModuleNotFoundError", make sure you:
+1. Have run `pip install -e .` from the project root
+2. Are running the command from the `src` directory
 
 ## Configuration
 
