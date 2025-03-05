@@ -20,6 +20,15 @@ The `-e` flag installs the package in "editable" mode, which means:
 - Changes to the source code take effect immediately without reinstalling
 - Required for running the package as a module with `python -m`
 
+### Environment Setup
+
+Create a `.env` file in the project root:
+```bash
+OPENAI_API_KEY=your_api_key_here
+```
+
+⚠️ The OpenAI API key is required for the crawler to process documentation.
+
 ## Usage
 
 Run the scraper with a URL from the `src` directory:
