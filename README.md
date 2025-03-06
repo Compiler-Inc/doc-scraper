@@ -35,7 +35,7 @@ Run the scraper with a URL from the `src` directory:
 
 ```bash
 cd src
-python -m doc_scraper.main https://docs.example.com
+python main.py https://docs.example.com
 ```
 
 ### Optional Arguments
@@ -46,7 +46,7 @@ python -m doc_scraper.main https://docs.example.com
 
 Example with all options:
 ```bash
-python -m doc_scraper.main https://docs.example.com -o my_docs -m 500 -c 2
+python main.py https://docs.example.com -o my_docs -m 500 -c 2
 ```
 
 ### Troubleshooting
