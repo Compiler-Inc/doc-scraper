@@ -1,4 +1,4 @@
-from doc_scraper.doc_crawler import DocCrawler
+from doc_crawler import DocCrawler
 import asyncio
 import argparse
 
